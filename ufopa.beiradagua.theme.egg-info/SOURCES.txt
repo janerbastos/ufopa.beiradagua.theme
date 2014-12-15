@@ -1,0 +1,15 @@
+README.txt
+setup.cfg
+setup.py
+ufopa/__init__.py
+ufopa.beiradagua.theme.egg-info/PKG-INFO
+ufopa.beiradagua.theme.egg-info/SOURCES.txt
+ufopa.beiradagua.theme.egg-info/dependency_links.txt
+ufopa.beiradagua.theme.egg-info/entry_points.txt
+ufopa.beiradagua.theme.egg-info/namespace_packages.txt
+ufopa.beiradagua.theme.egg-info/not-zip-safe
+ufopa.beiradagua.theme.egg-info/paster_plugins.txt
+ufopa.beiradagua.theme.egg-info/requires.txt
+ufopa.beiradagua.theme.egg-info/top_level.txt
+ufopa/theme/__init__.py
+ufopa/theme/tests.py
