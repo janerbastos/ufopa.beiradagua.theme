@@ -6,7 +6,8 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
 
     <!-- The default theme, used for standard Plone web pages -->
-    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+    <theme href="index.html" css:if-content=".section-front-page" />
+    <theme href="comum.html" css:if-not-content=".section-front-page" />
     <notheme if-path="@@manage-viewlets" />
     <notheme if-path="@@overview-controlpanel" />
     <notheme if="$ajax_load" />
@@ -49,7 +50,20 @@
         <!-- Logo -->
         <replace css:content="#portal-logo" css:theme="#portal-logo" />
 
+        <!--portal Global Nav -->
         <copy css:theme="#portal_link" css:content="#portal-logo" attributes="href" />
+
+        <replace css:theme-children="#portal-globalnav">
+            <xsl:for-each css:select="#portal-globalnav > li">
+                <xsl:apply-templates css:select="li.plain, li.selected"/>
+            </xsl:for-each>
+        </replace>
+
+        <drop css:content="#portaltab-index_html" />
+
+        <!--portal footer -->
+        <replace css:theme-children="footer p" css:content-children="div#portal-footer p" />
+        <replace css:theme="#portal-actions" css:content="ul#portal-siteactions" />
 
     </rules>
 
