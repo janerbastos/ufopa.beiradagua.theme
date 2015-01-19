@@ -48,7 +48,9 @@
         <before css:content="#portal-header > p.hiddenStructure:first-child" css:theme-children="#portal-header" />
 
         <!-- Logo -->
-        <replace css:content="#portal-logo" css:theme="#portal-logo" />
+        <copy css:content="#portal-logo" css:theme="#portal-logo" attributes="href"/>
+        <copy css:content="#portal-logo img" css:theme="#portal-logo img" attributes="src"/>
+
 
         <!--portal Global Nav -->
         <copy css:theme="#portal_link" css:content="#portal-logo" attributes="href" />
@@ -62,7 +64,7 @@
         <drop css:content="#portaltab-index_html" />
 
         <!--portal footer -->
-        <replace css:theme-children="footer p" css:content-children="div#portal-footer p" />
+        <replace css:theme="#endereco" css:content="div#portal-footer p" />
         <replace css:theme="#portal-actions" css:content="ul#portal-siteactions" />
 
     </rules>
