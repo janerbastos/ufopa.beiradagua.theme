@@ -18,6 +18,37 @@ footer {
   background-image: url("../images/bg01.jpeg");
   color: #fff;
 }
+/*mudança footer- inicio*/
+
+
+footer ul {
+  list-style-type: none;
+  margin-left: -40px;
+
+}
+
+footer ul li a {
+
+  width: auto;
+  color: #fff;
+  
+}
+footer ul li a:hover{
+  color:#0c6005;
+}
+
+
+#sociais a {
+  padding-left: 5px;
+ 
+}
+#sociais {
+   margin-top: 10px;
+}
+
+
+/*mudança footer - fim*/
+
 
 .list-group-item{
   background-image: url("../images/bg01.jpeg");
@@ -28,6 +59,7 @@ footer {
 
 #portal-topo{
   background: url("../images/bg03.jpeg") repeat-x;
+  margin-top: -15px;
 }
 
 
@@ -37,6 +69,53 @@ footer {
       padding-top:10em;
     }
 }
+
+/*  barra brasil-inicio - arquivos:ai.png,brasil1.png,bbrasil.png, bbrasil.gif ; */
+#bbrasil .informacao {
+    background: url("../images/ai.png") no-repeat scroll 0 4px #004b82;
+    display: block;
+    height: 28px;
+    text-indent: -1000px;
+    width: 161px;
+}
+#bbrasil .brasil {
+    background: url("../images/brasil1.png") no-repeat scroll 0 4px #004b82;
+    display: block;
+    height: 28px;
+    text-indent: -1000px;
+    width: 108px;
+}
+#bbrasil a:hover {
+    border: medium none;
+}
+
+
+#bbrasil {
+    background: url("../images/bbrasil.png") no-repeat scroll center bottom #004b82;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+#bbrasil .barra {
+    background: url("../images/bbrasil.gif") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    display: block;
+    height: 28px;
+    margin: 0 auto;
+    
+}
+#bbrasil .barra ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 319px;
+}
+#bbrasil .barra ul li {
+    float: left;
+    list-style-type: none;
+    padding-left: 25px;
+}
+/*  barra brasil-fim */
 
 /*
  * Off Canvas
