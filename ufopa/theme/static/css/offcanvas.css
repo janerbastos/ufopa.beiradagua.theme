@@ -64,11 +64,11 @@ Modificações gerais
 */
 
 #portal-topo{
-<<<<<<< HEAD
   background: url("../images/bg01.jpeg");
   color: #fff;
   margin-top: 5px;
 }
+
 #portal-logo{
     padding-left: 30px;
     margin-top: 5px;
@@ -106,10 +106,6 @@ Modificações gerais
   #menu-inferior{  /* Menor inferior para resoluções até 360px*/
     font-size: 8px;
   }
-=======
-  background: url("../images/bg03.jpeg") repeat-x;
-  margin-top: -15px;
->>>>>>> 9b3b4571a7c8657578018e3844488d36a3b426d7
 }
 
 /* Para resoluções de 361px a 767px */
@@ -198,10 +194,6 @@ Modificações gerais
   }
 }
 
-<<<<<<< HEAD
-
-/* -------- */
-=======
 /*  barra brasil-inicio - arquivos:ai.png,brasil1.png,bbrasil.png, bbrasil.gif ; */
 #bbrasil .informacao {
     background: url("../images/ai.png") no-repeat scroll 0 4px #004b82;
@@ -248,7 +240,6 @@ Modificações gerais
     padding-left: 25px;
 }
 /*  barra brasil-fim */
->>>>>>> 9b3b4571a7c8657578018e3844488d36a3b426d7
 
 /*
  * Off Canvas
