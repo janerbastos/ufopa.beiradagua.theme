@@ -10,6 +10,7 @@ body {
 body {
   padding-top: 0px;
   background-image: url("../images/bg02.jpeg");
+  
 }
 
 footer {
@@ -26,34 +27,156 @@ footer {
   padding: 6px 15px;
 }
 
+/* ------------------------------ 
+Modificações gerais
+
+*/
+
 #portal-topo{
-  background: url("../images/bg03.jpeg") repeat-x;
+  background: url("../images/bg01.jpeg");
+  color: #fff;
+  margin-top: 5px;
+}
+#portal-logo{
+    padding-left: 30px;
+    margin-top: 5px;
+  }
+ #menu-principal{
+  margin-top: 0px;
+ }
+#portal-banner{
+  margin-top: 0px;
+}
+.navbar-default{ /* Altura do navbar para o banner-principal*/
+  margin-bottom: 5px;
+}
+#menu-inferior{  /* abaixo do banner-principal, visivel somente para resoluções menores que 991px*/
+  background: url("../images/bg01.jpeg");
+  margin-top: 5px;
+  text-align: center;
+}
+#menu-inferior .list-group .list-group-item{ /* Margem dos itens do menu-inferior*/
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+  }
+
+/* Para resoluções até 360px */
+
+@media (max-width: 360px) {
+
+  #portal-topo{
+    background: url("../images/bg320-360px.png");
+  }
+  #portal-logo{
+    margin-top: 10px;
+  }
+  #menu-inferior{  /* Menor inferior para resoluções até 360px*/
+    font-size: 8px;
+  }
 }
 
+/* Para resoluções de 361px a 767px */
+
+@media (min-width: 361px) and (max-width: 767px){
+
+  #portal-topo{
+    background: url("../images/bg768-991px.png");
+  }
+}
+
+/* Para resoluções menores que 768*/
+
+@media (max-width: 767px){
+
+  #portal-logo{
+    display: block;
+  }
+
+  #btn-menu-principal{    /* Botão do menu principal (ICON-BAR), quandO reduzido até 767px*/
+    background: url("../images/bg01.jpeg");
+  }
+  #btn-menu-lateral{    /* Botão do menu lateral - ao clicá-lo aparece o list-grou (MENU LATERAL) */ 
+    background: url("../images/bg01.jpeg");
+  }
 
 
-@media (min-width: 981px) {
-    #menu{
-      padding-top:10em;
+  
+}
+
+.bg{
+  background: url("../images/bg01.jpeg");
+}
+
+/* Para resoluções  de 768 a 991px */
+
+@media (min-width: 768px) and (max-width: 991px){
+
+  #portal-topo{
+    background: url("../images/bg768-991px.png");
+  
+  }
+
+  #menu-principal{      /* Navbar - menu-principal */
+    font-size: 8px;
+  }
+
+  #menu-lateral{        /* List-group - menu-lateral ou inferior */
+    font-size: 10px;
+  }
+  #btn-menu-lateral{    /* Botão do menu lateral - ao clicá-lo aparece o list-grou (MENU LATERAL) */           
+    background: url("../images/bg01.jpeg");
+  }
+  
+}
+
+/* Para resoluções de 992 a 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #portal-topo{
+      background: url("../images/bg992-1199px.png");
     }
+
+    #menu-principal{     /* Navbar */
+    font-size: 11px;
+  }
+
+  #menu-lateral{         /* List-group */
+    font-size: 10px;
+  }
+
+    .navbar-default{      /* Margem inferior do menu-principal - navbar*/
+    margin-bottom: 5px;
+  }
 }
+
+/* Para resoluções a partir de 1200px */
+
+@media (min-width: 1200px){
+
+  #portal-topo{
+    background: url("../images/bg1280mais.png");
+  }
+  .navbar-default{        /* Margem inferior do menu*/
+    margin-bottom: 5px;
+  }
+}
+
+
+/* -------- */
 
 /*
  * Off Canvas
  * --------------------------------------------------
  */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) { /* Alterei de max-width de  para 991px */
 
    #portal_link{
       padding-top: 0;
    }
 
-   #portal-topo{
-    background: none;
-   }
-
-  .row-offcanvas {
+     .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
          -o-transition: all .25s ease-out;
@@ -100,6 +223,24 @@ footer {
 }
 
 .navbar-inverse .navbar-nav > .selected > a, .navbar-inverse .navbar-nav > .selected > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: #080808;
-  color: #fff;
+  background-color: #080808; // fundo Preto
+  color: #fff; // cor branco
 }
+
+/* MOdificação no menu horizontal */
+
+.navbar .navbar-inverse{
+  background: green;
+}
+
+
+.navbar .navbar-collapse li:hover{
+  background: green;
+
+}
+
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #fff;
+}
+
